@@ -1,5 +1,5 @@
 let currentDay = moment();
-let currentHour = moment().hours("ha");
+let currentHour = moment().hours();
 
 
 // Displays current day and date
