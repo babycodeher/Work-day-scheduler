@@ -1,5 +1,5 @@
 let currentDay = moment();
-// let currentHour = moment().hours("ha");
+let currentHour = moment().hours("ha");
 
 
 // Displays current day and date
@@ -19,3 +19,21 @@ $(".saveBtn").on("click", function(event) {
     
 }) 
 
+function hourEl(){
+    $(".time-block").each(function(){
+        let hour = parseInt($(this).attr("id").split("-")[1]);
+    
+        if(hour === currentHour) {
+            $(this).addClass("present");
+        } else if(hour < currentHour) {
+            $(this).removeClass("present");
+            $(this).addClass("past");   
+        } else if (hour > currentHour) {
+            $(this).removeClass("present");
+            $(this).removeClass("past");
+            $(this).addClass("future");   
+        }
+    });
+    };
+    
+    hourEl()
