@@ -71,3 +71,11 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 260px;
+}

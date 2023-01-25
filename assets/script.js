@@ -1,8 +1,8 @@
 let currentDay = moment();
 let currentHour = moment().hours();
 
-// Displays current day and date
-$("#currentDay").text(currentDay.format("dddd, MMMM Do"));
+// Displays current day and date and time
+$("#currentDay").text(currentDay.format("dddd, MMMM Do, hh:mma"));
 
 
 // Specifies the style for the hour element by defining style as present, past or future
