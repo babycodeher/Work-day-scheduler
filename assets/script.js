@@ -34,9 +34,9 @@ $(".saveBtn").on("click", function(event) {
     // console.log(scheduleItem);
     // console.log(dataTime);
 
-    // Save the data to local Storage
+    // Save the user input to local Storage
     localStorage.setItem(dataTime, scheduleItem);
+    localStorage.getItem(datatime, scheduleItem);
 }); 
 
 // This code saves user input in local storage
-// localStorage.setItem("");
