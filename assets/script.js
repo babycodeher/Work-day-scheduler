@@ -9,7 +9,7 @@ $("#currentDay").text(currentDay.format("dddd, MMMM Do, hh:mma"));
 
 $(".time-block").each(function(){
     let hour = parseInt($(this).attr("id").split(["-"])[1]);
-console.log(hour);
+
     if(hour === currentHour) {
         $(this).addClass("present");
     } else if(hour < currentHour) {
@@ -30,13 +30,8 @@ $(".saveBtn").on("click", function(event) {
     let scheduleItem = ($(event.target).siblings("textarea").val());
     
     let dataTime = ($(event.target).attr("data-time"));
-    
-    // console.log(scheduleItem);
-    // console.log(dataTime);
 
     // Save the user input to local Storage
     localStorage.setItem(dataTime, scheduleItem);
-    localStorage.getItem(datatime, scheduleItem);
 }); 
 
-// This code saves user input in local storage
